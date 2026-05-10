@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     for(let i =0;i < SQUARE_COUNT; i++){
         //Makee the element, but its not anything or on the page
-        let square = document.createELement('img');
+        let square = document.createElement('img');
         //Set the attributes/properties of that element.
         square.src = "laughing_man.jpg";
         square.alt = "Catch the Laughing Man!";
-        square.class = "square";
+        square.className = "square";
         box.appendChild(square);
-        
+
     }
 });
