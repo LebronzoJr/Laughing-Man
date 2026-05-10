@@ -11,12 +11,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
     
     fsquare.addEventListener("mouseover",()=>{
-        fsquare.style.backgroundColor = getRandomColor();
-        console.log("Change Worked");
+        fsquare.style.backgroundColor = getColor();
     });
         fsquare.addEventListener("mouseout",()=>{
-        fsquare.style.backgroundColor = #FF0000;
-        console.log("Change Worked");
+        fsquare.style.backgroundColor = "#FF0000";
     });
 
 
