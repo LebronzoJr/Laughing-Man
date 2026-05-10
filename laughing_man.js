@@ -1,4 +1,4 @@
-const SQUARE_COUNT=1;
+const SQUARE_COUNT=100;
 const TIMER_SPEED=16.6;
 const SPEED = 5;
 
@@ -52,10 +52,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
             if(x <= 0 || x>= maxX ){
                 dx*=-1;
+                element.style.backgroundColor = `${getColor()}`;
+                element.style.border = `3px solid ${getColor()}`;
             }
 
             if(y <= 0 || y >= maxY){
                 dy*=-1;
+                element.style.backgroundColor = `${getColor()}`;
+                element.style.border = `3px solid ${getColor()}`;
             }
 
             x+=dx;
