@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         fsquare.style.backgroundColor = getRandomColor();
         console.log("Change Worked");
     });
+        fsquare.addEventListener("mouseout",()=>{
+        fsquare.style.backgroundColor = #FF0000;
+        console.log("Change Worked");
+    });
 
 
     let box = document.querySelector("#box");
@@ -65,7 +69,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 });
 
-function getRandomColor(){
+function getColor(){
     let letters = "0123456789ABCDEF";
     let color = "#";
     for (let i=0;i<6; i++){
