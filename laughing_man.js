@@ -1,11 +1,20 @@
-const SQUARE_COUNT=100;
+const SQUARE_COUNT=1;
 const TIMER_SPEED=16.6;
 const SPEED = 5;
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    document.querySelector("#square").addEventListener("click",()=>{
+
+    let fsquare = document.querySelector("#square");
+
+    fsquare.addEventListener("click",()=>{
         alert("OMG YOU CLICKED ME!");
     });
+    
+    fsquare.addEventListener("mouseover",()=>{
+        fsquare.style.backgroundColor = getRandomColor();
+        console.log("Change Worked");
+    });
+
 
     let box = document.querySelector("#box");
 
@@ -55,3 +64,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }, TIMER_SPEED)
     });
 });
+
+function getRandomColor(){
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i=0;i<6; i++){
+        color+=letters.charAt(parseInt(Math.random()*letters.length));
+    }
+    return color;
+}
